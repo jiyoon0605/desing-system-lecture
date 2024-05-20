@@ -11,17 +11,20 @@ interface DefaultTextFieldProps {
   value: string;
   iconAlt: string;
   isError: boolean;
+  id: string;
 }
 
 export default function DefaultTextField({
-                                           errorMessage, iconPath, onIconClick, placeholder, onChange, value, iconAlt, isError
+                                           errorMessage, iconPath, onIconClick, placeholder, onChange, value, iconAlt, isError, id
                                          }: DefaultTextFieldProps) {
-  const [focus, setFocus] = useState(true);
+  const [focus, setFocus] = useState(false);
   const borderColor = focus ? 'border-secondary' : !value ? 'border-mono300' : 'border-primary';
-  return <div onFocus={() => setFocus(true)}
+  return <div className={'relative mb-4'}
+              onFocus={() => setFocus(true)}
               onBlur={() => setFocus(false)}>
     <div className={`text-primary border-b ${borderColor}`}>
-      <input type="text"
+      <input id={id}
+             type="text"
              value={value}
              placeholder={placeholder}
              onChange={onChange}

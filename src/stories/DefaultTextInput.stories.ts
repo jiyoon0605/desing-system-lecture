@@ -26,6 +26,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
+    id:'email',
     errorMessage: '에러 메세지',
     iconAlt: 'delete icon',
     iconPath: '/icons/ic-delete-dark.svg',

@@ -21,8 +21,6 @@
   "dependencies": {
     "@fontsource/noto-sans": "^5.0.22",
     "@fontsource/noto-sans-kr": "^5.0.19",
-    "i": "^0.3.7",
-    "npm": "^10.8.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

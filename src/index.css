@@ -9,7 +9,7 @@
 }
 
 @layer components {
-  .text-field > p {
+  .relative > p {
     @apply absolute;
   }
 }
