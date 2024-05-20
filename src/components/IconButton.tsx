@@ -1,7 +1,9 @@
+import { MouseEventHandler } from 'react';
+
 interface IconButtonProps {
   alt: string;
   iconPath: string;
-  onClick: () => void;
+  onClick: MouseEventHandler<HTMLButtonElement>
 }
 
 export default function IconButton({alt, iconPath, onClick}: IconButtonProps) {
