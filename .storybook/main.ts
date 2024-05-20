@@ -1,6 +1,4 @@
-import type { StorybookConfig } from "@storybook/react-vite";
-
-const config: StorybookConfig = {
+export default {
   stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
   addons: [
     "@storybook/addon-onboarding",
@@ -15,12 +13,5 @@ const config: StorybookConfig = {
   },
   docs: {
     autodocs: "tag",
-  },
-};
-export default {
-  stories: ['../src/**/*.mdx', '../stories/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
-  addons: ['@storybook/addon-links', '@storybook/addon-essentials'],
-  core: {
-    builder: '@storybook/builder-vite', // 👈 The builder enabled here.
   },
 };
