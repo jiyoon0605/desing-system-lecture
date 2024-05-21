@@ -15,6 +15,7 @@ export default {
       },
     },
     borderRadius: {
+      'primary-button': '5px',
       default: '5px',
       caption: '9px',
       'tag-button': '16px',

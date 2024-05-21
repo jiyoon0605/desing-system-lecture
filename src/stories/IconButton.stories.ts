@@ -3,7 +3,7 @@ import IconButton from '../components/IconButton.tsx';
 import { fn } from '@storybook/test';
 
 const meta = {
-  title: 'IconButton',
+  title: 'Buttons/IconButton',
   component: IconButton,
   parameters: {
     layout: 'centered',
