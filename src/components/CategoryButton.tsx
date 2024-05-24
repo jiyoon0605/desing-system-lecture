@@ -15,6 +15,7 @@ export default function CategoryButton({ iconPath, iconAlt, children, onClick }:
         border-primary
         text-primary
         text-base
+        text-mono
         font-bold
         px-[22px]
         py-4
