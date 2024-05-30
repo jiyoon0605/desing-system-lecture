@@ -3,7 +3,7 @@ import { fn } from '@storybook/test';
 import DefaultTextInput from '../components/DefaultTextField.tsx';
 
 const meta = {
-  title: 'Example/DefaultTextInput',
+  title: 'Input/DefaultTextInput',
   component: DefaultTextInput,
   parameters: {
     layout: 'centered',
